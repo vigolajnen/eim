@@ -1,0 +1,116 @@
+
+$fontOS: "Object Sans", "Arial", sans-serif;
+$fontOSSlanted: "Object Sans Slanted", "Arial", sans-serif;
+$fontOSHeavy: "Object Sans Heavy", "Arial", sans-serif;
+$fontOSHeavySlanted: "Object Sans Heavy Slanted", "Arial", sans-serif;
+
+
+@font-face {
+  font-family: $fontOS;
+  font-display: auto;
+  src: url("../fonts/ObjectSans-Regular.woff2") format("woff2"),
+    url("../fonts/ObjectSans-Regular.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $fontOSSlanted;
+  font-display: auto;
+  src: url("../fonts/ObjectSans-Slanted.woff2") format("woff2"),
+    url("../fonts/ObjectSans-Slanted.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $fontOSHeavy;
+  font-display: auto;
+  src: url("../fonts/ObjectSans-Heavy.woff2") format("woff2"),
+    url("../fonts/ObjectSans-Heavy.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $fontOSHeavySlanted;
+  font-display: auto;
+  src: url("../fonts/ObjectSans-HeavySlanted.woff2") format("woff2"),
+    url("../fonts/ObjectSans-HeavySlanted.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  position: relative;
+  min-width: 300px;
+  margin: 0;
+  padding: 0;
+  font-family: $fontExo;
+  
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $text-color;
+
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.picture {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  outline: none;
+}
+
+
+@keyframes animation__bottomFadeOut {
+  0% {
+    transform: translateY(70px)
+  }
+
+  to {
+    transform: translateY(0)
+  }
+}
+
+@keyframes animation__bottomFadeIn {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(70px);
+  }
+}
+
+.fadeInUpSmall {
+  animation-name: fadeInUpSmall;
+}
+
+@keyframes fadeInUpSmall {
+  from {
+    opacity: 0;
+
+    transform: translate3d(-50%, 6px, 0)
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translate3d(-50%, 0, 0)
+  }
+}
+

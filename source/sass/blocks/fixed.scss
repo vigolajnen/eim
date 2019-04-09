@@ -1,0 +1,31 @@
+.fixed {
+  width: 100%;
+  height: 61px;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+
+  // background: #fff;
+  // border-bottom: 1px solid #f3f3f3;
+
+
+  transform: translateZ(0);
+  transition: all .55s;
+
+  @media (min-width: $tablet-width) {
+    height: 100px;
+  }
+}
+
+.fixed-top {
+  top: 0;
+}
+
+.fixed-bottom {
+  top: -100px;
+  transform: translate3d(0, -100%, 0);
+}
+
+.header-mobile--dark {
+  background-color: $color-base-blue;
+}

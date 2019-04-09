@@ -1,0 +1,40 @@
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__item {
+      margin-right: 20px;
+
+      &:last-child {
+          margin-right: 0;
+      }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+  }
+}
+
+.contact-list__item--btn-white {
+  padding: 13px 27px;
+  font-family: Exo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+
+  
+
+  background: #ffffff;
+  border-radius: 5px;
+
+  & .contact-list__link {
+    color: #000e58;
+  }
+}

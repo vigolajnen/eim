@@ -1,0 +1,58 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: transparent;
+  text-decoration: none;
+
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+
+  outline: none;
+}
+
+.button--yellow {
+  padding: 20px;
+  font-family: $fontMontserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #02126a;
+  background: #f2d046;
+  border-radius: 5px;
+
+  @include ff(
+    "font-size",
+    (
+      375px: 13px,
+      1440px: 16px
+    )
+  );
+}
+
+.button--blue-dark {
+  padding: 20px 40px;
+  font-family: $fontMontserrat;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: #011166;
+  border-radius: 5px;
+
+  @include ff(
+    "font-size",
+    (
+      375px: 16px,
+      1440px: 20px
+    )
+  );
+}

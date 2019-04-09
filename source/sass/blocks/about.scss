@@ -1,0 +1,41 @@
+.about {
+  &__wrapper {
+    margin-bottom: 50px;
+  }
+  & .title {
+    margin-bottom: 60px;
+    display: block;
+    text-align: center;
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__left {
+    width: 100%;
+    @include respond-above(sm) {
+      width: 45%;
+    }
+  }
+  &__right {
+    width: 100%;
+    @include respond-above(sm) {
+      width: 50%;
+    }
+
+    & .picture {
+        height: 100%;
+    }
+  }
+  & ul {
+    font-family: $fontExo;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    
+    color: #38383D;
+
+    @include ff('font-size', (375px: 14px, 1440px: 18px));
+  }
+}

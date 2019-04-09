@@ -1,0 +1,33 @@
+$color-bg: #0e224f;
+
+.page-footer {
+  background-color: $color-bg;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+  @include respond-above(sm) {
+    padding: 45px 0;
+  }
+}
+
+.page-footer__right.copyright {
+  font-family: $fontExo;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+
+  color: #ffffff;
+  @include ff(
+    "font-size",
+    (
+      375px: 10px,
+      1440px: 16px
+    )
+  );
+}

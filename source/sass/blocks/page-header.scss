@@ -1,0 +1,162 @@
+.page-header {
+  position: relative;
+  min-height: 60px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 0 20px;
+
+  background: rgba(0, 21, 62, 0.5);
+
+  @include respond-above(sm) {
+    // padding: 0 80px;
+  }
+
+  &--hidden {
+    transform: translate3d(0, -90px, 0);
+  }
+
+  &__link {
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 15px;
+    }
+
+    @media (min-width: $desktop-width-xl) {
+      margin-right: 20px;
+
+    }
+
+    @media (min-width: 1700px) {
+      margin-right: 40px;
+    }
+  }
+
+  &__nav {
+    position: relative;
+    width: 100%;
+    min-height: 57px;
+    height: 60px;
+
+    @media (min-width: $tablet-width) {
+      width: 45%;
+      height: auto;
+    }
+
+    @media (min-width: 1024px) {
+      width: 60%;
+    }
+
+    @media (min-width: 1280px) {
+      // width: 65%;
+      width: 55%;
+    }
+  }
+
+
+}
+
+.page-header .wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-header__left {
+  width: 100%;
+  @include respond-above(md) {
+    width: 68%;
+    padding-top: 16px;
+    padding-bottom: 18px;
+  }
+}
+
+.page-header__right {
+
+  @include respond-above(md) {
+    width: 32%;
+  }
+  display: flex;
+  justify-content: flex-end;
+  
+
+  padding-top: 16px;
+  padding-bottom: 18px;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.page-header__nav .phone {
+  @media (min-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    display: block;
+    padding: 0;
+    z-index: 1;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+  }
+}
+
+.page-header__bottom {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    background-color: #ffffff;
+  }
+}
+
+.page-header__nav .logo {
+
+  @media (min-width: $mobile-width-only) {
+    display: none;
+    margin-right: 44px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 3;
+    transform: translateY(-50%);
+  }
+}
+
+.page-header__tel-and-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin-right: 50px;
+
+  & .button-link {
+    margin-top: 10px;
+    line-height: normal;
+    font-size: 12px;
+    text-align: left;
+
+    color: #24A3FF;
+  }
+}
+
+.page-header__user {
+  & svg {
+    fill: #ffffff;
+  }
+}

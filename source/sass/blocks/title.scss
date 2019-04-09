@@ -1,0 +1,36 @@
+$color-title: #FAFAFA;
+
+.title {
+  margin: 0;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 800;
+
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+
+  font-family: $fontMontserrat; 
+  
+  color: #010F5B;
+
+  @include ff('font-size', (375px: 24px, 1440px: 35px));
+
+
+}
+
+.title-form {
+  margin: 0;
+  display: inline-block;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+
+  font-family: $fontMontserrat;
+
+  @include ff('font-size', (375px: 20px, 1440px: 35px));
+
+  @include respond-above(lg) {
+    line-height: 58px;
+  }
+}
