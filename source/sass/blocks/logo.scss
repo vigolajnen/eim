@@ -10,7 +10,20 @@
     padding-left: 45%;
   }
 
-  @include respond-above(md) {
+  @media (max-width: 600px) {
+    margin-left: 70%;
+    padding-left: 0;
+  }
+
+  @media (max-width: 500px) {
+    margin-left: 65%;
+  }
+
+  @media (max-width: 425px) {
+    margin-left: 20%;
+  }
+
+  @include respond-above(sm769) {
     display: none;
   }
 }

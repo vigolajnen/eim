@@ -24,7 +24,7 @@
 //     }
 
 
-//     if ($(window).scrollTop() > 1000) {
+//     if ($(window).scrollTop() > 700) {
 //       div.classList.add('header-mobile--dark');
 //     } else {
 //       div.classList.remove('header-mobile--dark');

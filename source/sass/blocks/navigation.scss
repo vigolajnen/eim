@@ -67,7 +67,8 @@
 
   @media (max-width: 425px) {
     &:nth-child(2) {
-      margin-top: 80px;
+      // margin-top: 120px;
+      margin-top: 0;
     }
   }
 
@@ -120,7 +121,7 @@
   text-decoration: none;
   color: $color-white;
 
-  @include ff('font-size', (375px: 14px, 1440px: 16px));
+  @include ff('font-size', (375px: 13px, 900px: 13px, 1440px: 16px));
 
 
 
@@ -154,8 +155,10 @@
 
 .navigation__link.logo__link {
   @include respond-below(sm769) {
-    padding: 25px 70px 30px;
-    padding-left: 120px;
+    // padding: 25px 70px 30px;
+    // padding-left: 120px;
+    padding: 0 70px 0 120px;
+    margin-top: 20px;
   }
 
   @include respond-below(xxs) {
@@ -196,17 +199,18 @@
     position: absolute;
     z-index: 5;
     top: 0;
-    left: 0;
+    left: -1px;
     height: 100vh;
-    width: 100%;
+    width: 327px;
     overflow: hidden;
   }
 
   .navigation.navigation--opened .navigation__list {
     // display: none;
-    height: auto;
+    height: 100%;
     width: 327px;
     max-width: 100%;
+    overflow-y: scroll;
 
     background: linear-gradient(180deg, #E7F0FC 0%, #FFFFFF 100%);
   }
@@ -224,13 +228,13 @@
 
 .navigation.navigation--opened .navigation__list {
   @include respond-below(xs) {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
   }
 }
 
 .navigation__item.logo {
-  @include respond-below(xs) {
+  @include respond-below(sm769) {
     top: 0;
     right: 0;
     position: absolute;
@@ -239,7 +243,7 @@
       background-color: transparent;
     }
   }
-  @include respond-above(xs) {
+  @media (min-height: 769px) {
     position: relative;
     top: auto;
     left: auto;
@@ -275,6 +279,14 @@
   .navigation__item {
     width: auto;
     height: auto;
+
+    @media (max-width: 880px) {
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   .navigation--nojs .navigation__toggle {
@@ -321,7 +333,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
   @include respond-above(sm) {
     display: none;
   }

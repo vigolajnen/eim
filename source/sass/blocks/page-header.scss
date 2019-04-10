@@ -86,14 +86,28 @@
 .page-header__left {
   width: 100%;
 
+  
+
   @include respond-above(xxs) {
     width: 35%;
   }
 
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+
+  @media (min-width: 769px) and (max-width: 995px) {
+    width: 73%;
+  }
+
   @include respond-above(md) {
-    width: 65%;
+    width: 70%;
     padding-top: 16px;
     padding-bottom: 18px;
+  }
+
+  @include respond-above(lg) {
+    width: 65%;
   }
 }
 
@@ -104,10 +118,28 @@
   width: 65%;
   height: 80px;
   padding: 0;
-  padding-right: 30px;
+  
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+
+  @media (min-width: 769px) and (max-width: 995px) {
+    width: 27%;
+  }
+
+  @include respond-below(sm769) {
+    padding-right: 30px;
+  }
 
   @include respond-above(md) {
+    width: 30%;
+    
+  }
+
+  @include respond-above(lg) {
     width: 35%;
+    
   }
 
   @include respond-below(xs) {
