@@ -1,21 +1,32 @@
 .promo {
   display: flex;
-  background-color: $color-base-blue;
+
   text-align: left;
   margin-bottom: 60px;
 
+  min-height: 100vh;
+
+  background-color: $color-base-blue;
+
   @include respond-above(md) {
-    padding-top: 180px;
-    padding-bottom: 190px;
-    min-height: 70vh;
+    min-height: 100vh;
   }
 
   &--bg {
-    background: url("../../img/promo/promo-bg.jpg");
+    background-image: url("../img/promo/promo-375.jpg");
+    background-color: $color-base-blue;
     background-repeat: no-repeat;
     mix-blend-mode: color;
     background-size: cover;
     background-position: 50%;
+
+    @include respond-above(sm) {
+      background-image: url("../img/promo/promo-768.jpg");
+    }
+
+    @include respond-above(md) {
+      background-image: url("../img/promo/promo-bg.jpg");
+    }
   }
 
   &__wrapper {
@@ -25,7 +36,7 @@
     align-items: center;
     padding-top: 100px;
     padding-bottom: 50px;
-    
+
 
     @include respond-above(sm) {
       padding: 157px auto 365px;
@@ -42,8 +53,20 @@
     flex-direction: column;
     align-items: flex-start;
 
-    @include respond-above(sm) {
-      max-width: 885px;
+    @include respond-above(xs) {
+      max-width: 440px;
+    }
+
+    @include respond-above(sm769) {
+      max-width: 570px;
+    }
+
+    @include respond-above(md) {
+      max-width: 670px;
+    }
+
+    @include respond-above(lg) {
+      max-width: 850px;
     }
   }
 
@@ -53,14 +76,26 @@
     font-style: normal;
     font-weight: 800;
 
-    line-height: normal;
+    line-height: 51px;
     text-align: left;
 
     color: $color-white;
 
+    text-transform: initial;
+
     text-shadow: 0px 4px 15px rgba(0, 19, 69, 0.57);
 
-    @include ff('font-size', (375px: 24px, 1440px: 60px, 1540px: 70px));
+    @include ff('font-size', (375px: 35px, 1440px: 60px, 1540px: 70px));
+
+    @include respond-above(sm) {
+      line-height: normal;
+    }
+  }
+
+  &__button {
+    @include respond-below(sm) {
+      margin: 0 auto;
+    }
   }
 
   &__link {
@@ -75,7 +110,7 @@
     flex-direction: column;
     margin: 0;
     margin-bottom: 50px;
-    
+
     @include respond-above(md) {
       flex-direction: row;
       background: linear-gradient(90.39deg, #010F5D -1.68%, #03157A 99.98%);
@@ -84,16 +119,17 @@
 
   &__intro-item {
     align-items: flex-start;
-    padding: 15px 17px;
+    padding: 10px 17px 10px 0;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
 
     color: $color-white;
 
-    @include ff('font-size', (375px: 22px, 1440px: 30px));
+    @include ff('font-size', (375px: 20px, 1440px: 30px));
 
     @include respond-above(sm) {
+      padding: 15px 17px;
       background: linear-gradient(90.39deg, #010F5D -1.68%, #03157A 99.98%);
     }
 
@@ -101,7 +137,7 @@
       flex-grow: 1;
       background: transparent;
     }
-    
+
   }
- 
+
 }

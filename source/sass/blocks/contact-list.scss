@@ -7,11 +7,11 @@
   align-items: center;
 
   &__item {
-      margin-right: 20px;
+    margin-right: 20px;
 
-      &:last-child {
-          margin-right: 0;
-      }
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__link {
@@ -22,14 +22,14 @@
 
 .contact-list__item--btn-white {
   padding: 13px 27px;
-  font-family: Exo;
+  font-family: $fontExo;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: normal;
   text-align: center;
 
-  
+
 
   background: #ffffff;
   border-radius: 5px;

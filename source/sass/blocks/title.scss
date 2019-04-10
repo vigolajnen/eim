@@ -10,13 +10,11 @@ $color-title: #FAFAFA;
   text-align: center;
   text-transform: uppercase;
 
-  font-family: $fontMontserrat; 
-  
+  font-family: $fontMontserrat;
+
   color: #010F5B;
 
   @include ff('font-size', (375px: 24px, 1440px: 35px));
-
-
 }
 
 .title-form {

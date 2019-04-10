@@ -48,7 +48,7 @@
     "start": "npm run build && gulp serve"
   },
   "browserslist": [
-    "last 2 versions",
+    "last 10 versions",
     "IE 11",
     "Firefox ESR"
   ],

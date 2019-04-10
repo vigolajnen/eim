@@ -1,3 +1,21 @@
-.logo {
-  
+.logo {}
+
+.logo--mobile {
+  display: block;
+
+  padding-left: 25%;
+  padding-top: 3%;
+
+  @include respond-above(xxs) {
+    padding-left: 45%;
+  }
+
+  @include respond-above(md) {
+    display: none;
+  }
+}
+
+.logo--mobile img {
+  width: 134px;
+  height: 56px;
 }

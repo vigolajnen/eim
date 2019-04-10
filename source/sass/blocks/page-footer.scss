@@ -11,8 +11,9 @@ $color-bg: #0e224f;
   align-items: center;
 
   padding: 20px;
+
   @include respond-above(sm) {
-    padding: 45px 0;
+    // padding: 45px 0;
   }
 }
 
@@ -23,11 +24,7 @@ $color-bg: #0e224f;
   line-height: normal;
 
   color: #ffffff;
-  @include ff(
-    "font-size",
-    (
-      375px: 10px,
-      1440px: 16px
-    )
-  );
+  @include ff("font-size",
+  (375px: 10px,
+    1440px: 16px));
 }

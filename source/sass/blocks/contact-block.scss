@@ -8,6 +8,7 @@
     text-align: center;
     margin-bottom: 30px;
   }
+
   &__name {
     margin-bottom: 24px;
     font-family: $fontMontserrat;
@@ -28,10 +29,12 @@
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+
 .contact-block__address-item {
   display: flex;
   align-items: baseline;
   margin-right: 30px;
+
   &:last-child {
     margin-right: 0;
   }
@@ -50,13 +53,9 @@
   color: #38383d;
   text-decoration: none;
 
-  @include ff(
-    "font-size",
-    (
-      375px: 14px,
-      1440px: 16px
-    )
-  );
+  @include ff("font-size",
+  (375px: 14px,
+    1440px: 16px));
 }
 
 .contact-block__text {
@@ -69,13 +68,9 @@
 
   color: #888888;
 
-  @include ff(
-    "font-size",
-    (
-      375px: 16px,
-      1440px: 20px
-    )
-  );
+  @include ff("font-size",
+  (375px: 16px,
+    1440px: 20px));
 }
 
 .contact-block__info {
@@ -92,6 +87,7 @@
   width: 100%;
   max-width: 100%;
   overflow: hidden;
+
   @include respond-above(sm) {
     width: 50%;
   }
@@ -99,6 +95,7 @@
 
 .contact-block__form {
   width: 100%;
+
   @include respond-above(sm) {
     width: 47%;
   }

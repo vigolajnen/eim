@@ -1,5 +1,6 @@
 .form-order {
   background-color: #f2d046;
+
   &__wrapper {
     padding-top: 44px;
     padding-bottom: 44px;
@@ -7,6 +8,7 @@
     width: 100%;
     margin: 0 auto;
   }
+
   &__title {
     margin-bottom: 26px;
     text-align: center;
@@ -14,6 +16,7 @@
 
     color: #011267;
   }
+
   &__form {
     display: flex;
     flex-wrap: wrap;
@@ -21,16 +24,18 @@
     flex-direction: column;
 
     @include respond-above(md) {
-        flex-wrap: nowrap;
-        flex-direction: row;
+      flex-wrap: nowrap;
+      flex-direction: row;
     }
   }
+
   &__item {
     flex-grow: 1;
     margin-bottom: 20px;
 
     @include respond-above(md) {
       margin-right: 40px;
+
       &:last-child {
         margin-right: 0;
       }
@@ -51,5 +56,11 @@
     background: #ffffff;
     box-shadow: inset 0px 4px 4px rgba(194, 156, 1, 0.15);
     border-radius: 5px;
+  }
+  &__btn {
+    @include respond-below(sm) {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }

@@ -164,6 +164,7 @@ gulp.task("jsmin", function () {
   gulp.src([
       "source/js/mobile.js",
       "source/js/header.js ",
+      "source/js/scroll.js ",
       "source/js/slider.js ",
       "source/js/popup.js",
     ])

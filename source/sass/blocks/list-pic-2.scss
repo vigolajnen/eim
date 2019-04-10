@@ -8,27 +8,29 @@
   justify-content: space-between;
 
   &__item {
-      width: 100%;
-      margin-bottom: 20px;
-    @include respond-above(sm) {
+    width: 100%;
+    margin-bottom: 20px;
+
+    @include respond-above(xs) {
       width: calc(100% / 3 - 20px);
       margin-bottom: 30px;
     }
   }
 
   &__inner {
-      display: flex;
-      flex-direction: column;
-      position: relative;
+    display: flex;
+    flex-direction: column;
+    position: relative;
   }
+
   &__title {
     margin-bottom: 15px;
-    font-family: $fontMontserrat; 
+    font-family: $fontMontserrat;
     font-style: normal;
     font-weight: bold;
 
     line-height: normal;
-    
+
     color: #000E58;
 
     text-decoration: none;
@@ -44,7 +46,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
-    
+
     color: #5F5757;
   }
 

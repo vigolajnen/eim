@@ -26,6 +26,10 @@
 
     & .picture {
         height: 100%;
+        
+        @include respond-below(md) {
+          object-position: 100%;
+        }
     }
   }
   & ul {

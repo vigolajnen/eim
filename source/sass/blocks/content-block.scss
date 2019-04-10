@@ -7,17 +7,23 @@
 
   &__figure {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    display: block;
+    text-align: center;
+
     @include respond-above(sm) {
       width: 60%;
       max-width: 400px;
+      padding: 10px;
     }
 
     &--sm {
-        @include respond-above(sm) {
-            width: 35%;
-          } 
+      width: 100%;
+
+      @include respond-above(sm) {
+        width: 35%;
+      }
     }
   }
 
@@ -26,16 +32,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    
-    color: #414141; 
 
-    @include ff(
-      "font-size",
-      (
-        375px: 12px,
-        1440px: 14px
-      )
-    );
+    color: #414141;
+
+    @include ff("font-size",
+    (375px: 12px,
+      1440px: 14px));
   }
 
   &__info {
@@ -47,9 +49,11 @@
     }
 
     &--lg {
-        @include respond-above(sm) {
-            width: 65%;
-          } 
+      width: 100%;
+
+      @include respond-above(sm) {
+        width: 65%;
+      }
     }
   }
 
@@ -69,19 +73,18 @@
 
     color: #38383d;
 
-    @include ff(
-      "font-size",
-      (
-        375px: 14px,
-        1440px: 16px
-      )
-    );
+    @include ff("font-size",
+    (375px: 14px,
+      1440px: 16px));
+
     &--bold {
       font-weight: bold;
     }
+
     & p {
       margin: 0;
     }
+
     & ul {
       padding: 0;
       padding-left: 20px;

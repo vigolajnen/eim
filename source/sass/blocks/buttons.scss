@@ -26,13 +26,9 @@
   background: #f2d046;
   border-radius: 5px;
 
-  @include ff(
-    "font-size",
-    (
-      375px: 13px,
-      1440px: 16px
-    )
-  );
+  @include ff("font-size",
+  (375px: 16px,
+    1440px: 16px));
 }
 
 .button--blue-dark {
@@ -48,11 +44,7 @@
   background: #011166;
   border-radius: 5px;
 
-  @include ff(
-    "font-size",
-    (
-      375px: 16px,
-      1440px: 20px
-    )
-  );
+  @include ff("font-size",
+  (375px: 16px,
+    1440px: 20px));
 }

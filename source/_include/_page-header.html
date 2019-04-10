@@ -4,11 +4,20 @@
       <nav class="navigation navigation--closed navigation--nojs">
         <button class="navigation__toggle js-mobile-menu-open" type="button" aria-label="Открыть меню">
         </button>
+        <div class="logo logo--mobile">
+          <a class="logo__link" href="#">
+            <img src="img/logo.svg" alt="Логотип компании">
+          </a>
+        </div>
+
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item logo">
               <a class="navigation__link logo__link" href="#">
-                <img src="img/logo.svg" alt="Логотип компании">
+                <picture>
+                  <source media="(min-width: 769px)" srcset="img/logo.svg">
+                  <img class="logo__pic" src="img/logo-mobile.svg" alt="логотип">
+                </picture>
               </a>
             </li>
             <li class="navigation__item">
