@@ -21,14 +21,24 @@
     border-radius: 5px;
     border: none;
     resize: none;
+    border: 1px solid transparent;
     background: #ffffff;
 
-    @include ff("font-size",
-    (375px: 14px,
-      1440px: 16px));
+    @include ff(
+      "font-size",
+      (
+        375px: 14px,
+        1440px: 16px
+      )
+    );
 
     &--message {
       min-height: 180px;
+    }
+
+    &:hover,
+    &:focus {
+      border: 1px solid rgba(56, 56, 61, 0.66);
     }
   }
 
@@ -36,9 +46,14 @@
     padding: 20px 40px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-     @include respond-below(sm) {
-       display: block;
-       margin: 0 auto;
-     }
+    transition: 0.5s;
+
+    @include respond-below(sm) {
+      display: block;
+      margin: 0 auto;
+    }
+    &:hover {
+      box-shadow: none;
+    }
   }
 }

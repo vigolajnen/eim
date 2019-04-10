@@ -5,6 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
 
   &__item {
     margin-right: 20px;
@@ -21,20 +22,25 @@
 }
 
 .contact-list__item--btn-white {
-  padding: 13px 27px;
+  padding: 8px 13px;
   font-family: $fontExo;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: normal;
   text-align: center;
-
-
-
   background: #ffffff;
   border-radius: 5px;
+
+  @include respond-above(md1100) {
+    padding: 13px 27px;
+  }
 
   & .contact-list__link {
     color: #000e58;
   }
+}
+
+.contact-list__link.button.button--yellow {
+  color: #02126a;
 }

@@ -10,7 +10,7 @@
     width: 100%;
     margin-bottom: 20px;
 
-    @include respond-above(xs) {
+    @include respond-above(sm) {
       width: calc(100% / 3 - 20px);
       margin-bottom: 30px;
     }
@@ -70,6 +70,7 @@
     min-height: 200px;
     margin-bottom: 15px;
     background-color: $color-base-yellow;
+    overflow: hidden;
 
     @include respond-above(md) {
       min-height: 250px;

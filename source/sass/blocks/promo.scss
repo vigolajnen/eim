@@ -1,5 +1,10 @@
 .promo {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
   text-align: left;
   margin-bottom: 60px;
@@ -13,7 +18,7 @@
   }
 
   &--bg {
-    background-image: url("../img/promo/promo-375.jpg");
+    //background-image: url("../img/promo/promo-375.jpg");
     background-color: $color-base-blue;
     background-repeat: no-repeat;
     mix-blend-mode: color;
@@ -36,7 +41,6 @@
     align-items: center;
     padding-top: 100px;
     padding-bottom: 50px;
-
 
     @include respond-above(sm) {
       padding: 157px auto 365px;
@@ -93,8 +97,15 @@
   }
 
   &__button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition: 0.5s;
     @include respond-below(sm) {
       margin: 0 auto;
+    }
+
+    &:hover {
+      box-shadow: none;
     }
   }
 
