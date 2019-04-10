@@ -67,7 +67,7 @@
 
   @media (max-width: 425px) {
     &:nth-child(2) {
-      margin-top: 60px;
+      margin-top: 80px;
     }
   }
 
@@ -235,7 +235,7 @@
     right: 0;
     position: absolute;
 
-    &:hover {
+    & a:hover {
       background-color: transparent;
     }
   }

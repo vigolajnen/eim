@@ -133,6 +133,7 @@ gulp.task("vendor", function () {
       "source/js/libs/jquery-3.3.1.js",
       "source/js/libs/picturefill.min.js",
       "source/js/libs/svg4everybody.min.js",
+      "source/js/libs/jquery.viewportchecker.min.js",
     ])
     .pipe(concat("vendor.min.js"))
     .pipe(gulp.dest("build/js"));
@@ -167,6 +168,7 @@ gulp.task("jsmin", function () {
       "source/js/scroll.js ",
       "source/js/slider.js ",
       "source/js/popup.js",
+      "source/js/viewportChecker.js",
     ])
     .pipe(concat("main.min.js"))
     .pipe(uglify({

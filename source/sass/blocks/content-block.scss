@@ -14,7 +14,7 @@
 
   &__figure {
     width: 100%;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 0;
     display: block;
     text-align: center;
@@ -23,6 +23,8 @@
       width: 60%;
       max-width: 400px;
       padding: 10px;
+
+      margin: 0 auto;
     }
 
     &--sm {
@@ -36,8 +38,13 @@
     &--542 {
       width: 542px;
       max-width: 100%;
-      margin-right: auto;
-      margin-left: 0;
+      margin: 0 auto;
+      display: block;
+
+      @include respond-above(md) {
+        margin-right: auto;
+        margin-left: 0;
+      }
     }
   }
 
@@ -59,14 +66,14 @@
     width: auto;
 
 
-    @include respond-above(sm) {
+    @include respond-above(md) {
       width: 50%;
     }
 
     &--lg {
       width: 100%;
 
-      @include respond-above(sm) {
+      @include respond-above(md) {
         width: 65%;
       }
     }

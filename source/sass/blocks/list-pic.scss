@@ -40,7 +40,7 @@
   &__text {
     margin: 0;
     margin-bottom: 15px;
-    font-family: Exo;
+    font-family: $fontExo;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -50,7 +50,7 @@
   }
 
   &__link {
-    font-family: Exo;
+    font-family: $fontExo;
     font-style: normal;
     font-weight: bold;
 
@@ -67,7 +67,7 @@
   &__box-picture {
     position: relative;
     max-height: 300px;
-    min-height: 200px;
+    min-height: 180px;
     margin-bottom: 15px;
     background-color: $color-base-yellow;
     overflow: hidden;
@@ -110,7 +110,9 @@
     bottom: 0;
     left: 0;
     z-index: 1;
-    min-height: 200px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 
     @include respond-above(md) {
       min-height: 250px;
