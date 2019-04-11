@@ -2,26 +2,32 @@
   &__wrapper {
     margin-bottom: 50px;
   }
+
   & .title {
     margin-bottom: 60px;
     display: block;
     text-align: center;
   }
+
   &__inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   &__left {
     width: 100%;
     margin-bottom: 40px;
+
     @include respond-above(sm) {
       width: 39%;
       margin-bottom: 0;
     }
   }
+
   &__right {
     width: 100%;
+
     @include respond-above(sm) {
       width: 55%;
     }
@@ -34,6 +40,7 @@
       }
     }
   }
+
   &__title-sub {
     margin: 0;
     margin-bottom: 30px;
@@ -44,14 +51,11 @@
 
     color: #38383d;
 
-    @include ff(
-      "font-size",
-      (
-        375px: 14px,
-        1440px: 18px
-      )
-    );
+    @include ff("font-size",
+    (375px: 14px,
+      1440px: 18px));
   }
+
   & ul {
     margin: 0;
     padding: 0;
@@ -63,12 +67,8 @@
 
     color: #38383d;
 
-    @include ff(
-      "font-size",
-      (
-        375px: 14px,
-        1440px: 18px
-      )
-    );
+    @include ff("font-size",
+    (375px: 14px,
+      1440px: 18px));
   }
 }

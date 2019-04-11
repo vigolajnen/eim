@@ -1,6 +1,4 @@
-.popup {
-
-}
+.popup {}
 
 .popup-overlay {
   display: none;
@@ -15,7 +13,7 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.popup-overlay > * {
+.popup-overlay>* {
   -webkit-transform: translateZ(0px);
 }
 

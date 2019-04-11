@@ -86,7 +86,7 @@
 .page-header__left {
   width: 100%;
 
-  
+
 
   @include respond-above(xxs) {
     width: 35%;
@@ -118,7 +118,7 @@
   width: 65%;
   height: 80px;
   padding: 0;
-  
+
 
   @media (max-width: 600px) {
     display: none;
@@ -134,12 +134,12 @@
 
   @include respond-above(md) {
     width: 30%;
-    
+
   }
 
   @include respond-above(lg) {
     width: 35%;
-    
+
   }
 
   @include respond-below(xs) {

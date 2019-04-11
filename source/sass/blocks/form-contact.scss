@@ -24,13 +24,9 @@
     border: 1px solid transparent;
     background: #ffffff;
 
-    @include ff(
-      "font-size",
-      (
-        375px: 14px,
-        1440px: 16px
-      )
-    );
+    @include ff("font-size",
+    (375px: 14px,
+      1440px: 16px));
 
     &--message {
       min-height: 180px;
@@ -52,6 +48,7 @@
       display: block;
       margin: 0 auto;
     }
+
     &:hover {
       box-shadow: none;
     }

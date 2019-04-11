@@ -1,5 +1,6 @@
 .content-block {
   overflow: hidden;
+
   &__item {
     display: flex;
     flex-wrap: wrap;
@@ -42,8 +43,13 @@
       display: block;
 
       @include respond-above(md) {
+        width: 50%;
         margin-right: auto;
         margin-left: 0;
+      }
+
+      @include respond-above(lg) {
+        width: 542px;
       }
     }
   }
@@ -120,6 +126,7 @@
 .content-block__item--bg-right .wrapper,
 .content-block__item--bg-left .wrapper {
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -139,6 +146,7 @@
 
 .content-block__item--bg-left .wrapper {
   position: relative;
+
   &::before {
     top: -170%;
     left: -35%;
