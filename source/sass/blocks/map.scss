@@ -7,11 +7,14 @@ $map-bg: #ecf9ff;
   background-repeat: no-repeat;
   background-color: $map-bg;
   height: 100%;
+  min-height: 350px;
+  margin-bottom: 20px;
   overflow: hidden;
 
   @media (min-width: $mobile-width-x) {
-    width: 100%;
-    min-height: 700px;
+    min-height: 550px;
+    height: 100%;
+    margin-bottom: 0;
     overflow: hidden;
   }
 }

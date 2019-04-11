@@ -7,80 +7,24 @@ function initMap() {
       id: 1,
       name: 'Тосненский',
       center: {
-        lat: 60.2379579,
-        lng: 30.337719
+        lat: 55.9026731,
+        lng: 37.521111
       },
       markers: [{
         location: {
-          lat: 60.2379579,
-          lng: 30.337719
-        }
-      }]
-    },
-    {
-      id: 2,
-      name: 'Гатчинский',
-      center: {
-        lat: 59.3474561,
-        lng: 29.5764328
-      },
-      markers: [{
-        location: {
-          lat: 59.3474561,
-          lng: 29.5764328
-        }
-      }]
-    },
-    {
-      id: 3,
-      name: 'Ломоносовский',
-      center: {
-        lat: 59.8043859,
-        lng: 28.4541205
-      },
-      markers: [{
-        location: {
-          lat: 59.8043859,
-          lng: 28.4541205
-        }
-      }]
-    },
-    {
-      id: 4,
-      name: 'Пушкинский',
-      center: {
-        lat: 59.7313552,
-        lng: 30.1177291
-      },
-      markers: [{
-        location: {
-          lat: 59.7313552,
-          lng: 30.1177291
-        }
-      }]
-    },
-    {
-      id: 5,
-      name: 'Красносельский',
-      center: {
-        lat: 59.7817717,
-        lng: 30.0121626
-      },
-      markers: [{
-        location: {
-          lat: 59.7817717,
-          lng: 30.0121626
+          lat: 55.9026731,
+          lng: 37.521111
         }
       }]
     }
   ]
 
-  var activeArea = areas[2];
+  var activeArea = areas[0];
 
   // Styles a map in night mode.
   var map = new google.maps.Map(document.getElementById('map'), {
     center: activeArea.center,
-    zoom: 9,
+    zoom: 13,
     styles: [{
         "featureType": "landscape",
         "stylers": [{
