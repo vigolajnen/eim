@@ -22,25 +22,32 @@
 }
 
 .contact-list__item--btn-white {
-  padding: 8px 13px;
+  
   font-family: $fontExo;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: normal;
   text-align: center;
-  background: #ffffff;
-  border-radius: 5px;
-
-  @include respond-above(md1100) {
-    padding: 13px 27px;
-  }
-
+  
   & .contact-list__link {
+    padding: 8px 13px;
     color: #000e58;
     font-weight: bold;
     line-height: normal;
     text-align: center;
+
+    background: #ffffff;
+    border-radius: 5px;
+
+    @include respond-above(md1100) {
+      padding: 13px 27px;
+    }
+
+    &:hover {
+      transition: 0.7s;
+      background-color: $color-base-yellow;
+    }
   }
 }
 

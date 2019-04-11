@@ -37,6 +37,10 @@
     @include ff('font-size', (375px: 14px, 1440px: 18px));
   }
 
+  &__name {
+    display: block;
+  }
+
   &__text {
     margin: 0;
     margin-bottom: 15px;
@@ -61,6 +65,13 @@
     @include ff('font-size', (375px: 14px, 1440px: 16px));
 
     text-decoration: none;
+
+    
+
+    &:hover {
+      transition: 1s;
+      text-decoration: underline;
+    }
 
   }
 

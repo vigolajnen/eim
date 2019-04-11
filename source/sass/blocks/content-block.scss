@@ -130,17 +130,17 @@
   &::before {
     position: absolute;
     content: "";
-    top: -15%;
-    right: -35%;
-    background-image: url("../img/content/circle-bg.svg");
+    top: -20%;
+    right: -99%;
+    background-image: url("../img/content/circle-bg.png");
     background-repeat: no-repeat;
-    background-size: 35%;
+    background-size: 100%;
     background-position: 0;
     transform: rotate(180deg);
-    z-index: 1;
+    z-index: -1;
     width: 100%;
     height: 100%;
-    opacity: .3;
+    // opacity: .3;
   }
 }
 
@@ -148,10 +148,10 @@
   position: relative;
 
   &::before {
-    top: -170%;
-    left: -35%;
-    height: 900px;
-    z-index: 1;
+    top: -175%;
+    left: -99%;
+    height: 950px;
+    z-index: -1;
     transform: rotate(0deg);
   }
 }
