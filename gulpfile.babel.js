@@ -14,6 +14,8 @@ var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
 var include = require("posthtml-include");
 var imagemin = require("gulp-imagemin");
+var imageminWebp = require('imagemin-webp');
+var extReplace = require("gulp-ext-replace");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
 var server = require("browser-sync").create();
@@ -26,7 +28,6 @@ var concat = require("gulp-concat");
 var spritesmith = require("gulp.spritesmith");
 var fileinclude = require("gulp-file-include");
 var replace = require("gulp-replace");
-var deploy = require("gulp-gh-pages");
 var babel = require("gulp-babel");
 
 gulp.task("clean", function () {
@@ -117,6 +118,17 @@ gulp.task("sprite-png", function () {
   spriteData.css.pipe(gulp.dest("source/sass/"));
 
   return spriteData;
+});
+
+gulp.task("webp", function () {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(imagemin([
+      imageminWebp({
+        quality: 90
+      })
+    ]))
+    .pipe(extReplace(".webp"))
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("html-2", function () {
